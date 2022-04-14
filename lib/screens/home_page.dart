@@ -13,9 +13,10 @@ class HomePage extends StatelessWidget {
         title: Text("Catalog"),
       ),
       body: Center(
-          child: Container(
-        child: Text("Welcome $name"),
-      )),
+        child: Container(
+          child: Text("Welcome $name"),
+        ),
+      ),
       drawer: Drawer(),
     );
   }
