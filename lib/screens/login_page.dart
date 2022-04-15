@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 "Welcome $name",
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                       setState(() {});
                     },
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                     ),
                   ),
                   SizedBox(
@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   TextFormField(
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                     ),
                     obscureText: true,
                     decoration: InputDecoration(
@@ -114,7 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 20,
+                                  fontSize: 15,
                                 ),
                               ),
                       ),
