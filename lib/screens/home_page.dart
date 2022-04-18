@@ -1,12 +1,34 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_catalog/models/product.dart';
 
 import '../widgets/drawer.dart';
 import '../widgets/product_widget.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final int i = 2;
+
   final String name = "Rushikesh";
+
+  @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
+
+  void loadData() async {
+    var catalogJson = await rootBundle.loadString("assets/files/catalog.json");
+    var decodeData = jsonDecode(catalogJson);
+    var productsData = decodeData["products"];
+    print(decodeData);
+  }
 
   @override
   Widget build(BuildContext context) {

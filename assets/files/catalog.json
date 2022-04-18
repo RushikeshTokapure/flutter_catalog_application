@@ -1,0 +1,45 @@
+{
+    "products":
+    [
+        {
+            "id": 1,
+            "name": "Iphone 13 Pro Max",
+            "desc": "13th generation",
+            "price": 999,
+            "color": "#000000",
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=470&hei=556&fmt=png-alpha&.v=1645552346295"
+        },
+        {
+            "id": 2,
+            "name": "Samsung S22",
+            "desc": "S22",
+            "price": 799,
+            "color": "#ffffff",
+            "image": "https://m.media-amazon.com/images/I/71HUnJvHsbL._SL1500_.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Samsung S22 Pro",
+            "desc": "S22 Pro",
+            "price": 859,
+            "color": "#ff1100",
+            "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/878dc681-657e-41ac-87a4-1e02f1d9541b22230620.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Samsung S22 Pro Max",
+            "desc": "S22 Pro Max",
+            "price": 899,
+            "color": "#0004ff",
+            "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/9d06235b-1df3-4674-b5b8-cde35a4c23fe22230635.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Samsung S22 Ultra Pro Max",
+            "desc": "S22 Ultra Pro Max",
+            "price": 959,
+            "color": "#c800ff",
+            "image": "https://www.xda-developers.com/files/2022/02/Samsung-Galaxy-S22-Ultra-Phantom-White_Product-Box-Image_86735.jpg"
+        }
+    ]
+}
