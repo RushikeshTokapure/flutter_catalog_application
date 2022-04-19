@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void loadData() async {
-    await Future.delayed(Duration(seconds: 4));
+    await Future.delayed(Duration(seconds: 2));
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
     final decodeData = jsonDecode(catalogJson);
@@ -45,11 +45,42 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(16.0),
         child:
             (CatalogModel.products != null && CatalogModel.products!.isNotEmpty)
-                ? ListView.builder(
-                    itemCount: CatalogModel.products!.length,
-                    itemBuilder: (context, index) => ProductWidget(
-                      product: CatalogModel.products![index],
+                ? GridView.builder(
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 16,
+                      crossAxisSpacing: 16,
                     ),
+                    itemBuilder: (context, index) {
+                      var product = CatalogModel.products![index];
+                      return Card(
+                        clipBehavior: Clip.antiAlias,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        child: GridTile(
+                          child: Image.network(product.image),
+                          header: Container(
+                            child: Text(
+                              product.name,
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            padding: EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: Colors.deepPurple,
+                            ),
+                          ),
+                          footer: Container(
+                            child: Text(
+                              product.price.toString(),
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(color: Colors.deepPurple),
+                          ),
+                        ),
+                      );
+                    },
+                    itemCount: CatalogModel.products?.length,
                   )
                 : Center(
                     child: CircularProgressIndicator(),

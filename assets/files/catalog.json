@@ -1,6 +1,5 @@
 {
-    "products":
-    [
+    "products": [
         {
             "id": 1,
             "name": "Iphone 13 Pro Max",
@@ -40,6 +39,46 @@
             "price": 959,
             "color": "#c800ff",
             "image": "https://www.xda-developers.com/files/2022/02/Samsung-Galaxy-S22-Ultra-Phantom-White_Product-Box-Image_86735.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Galaxy A73 5G (8GB RAM)",
+            "desc": "A73 5G",
+            "price": 548.65,
+            "color": "#948c75",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a736bzaginu/gallery/in-galaxy-a73-5g-a736-sm-a736bzaginu-thumb-531831005?$160_160_PNG$"
+        },
+        {
+            "id": 7,
+            "name": "Galaxy A53 5G (8GB RAM)",
+            "desc": "A53 5G",
+            "price": 470.27,
+            "color": "#7797a3",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/2202/gallery/in-galaxy-a53-5g-a536-416923-sm-a536elbgins-thumb-531436248?$160_160_PNG$"
+        },
+        {
+            "id": 8,
+            "name": "Galaxy A23 (6GB RAM)",
+            "desc": "A23",
+            "price": 254.72,
+            "color": "#d45017",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a235fzohins/gallery/in-galaxy-a23-sm-a235-sm-a235fzohins-thumb-531577327?$160_160_PNG$"
+        },
+        {
+            "id": 9,
+            "name": "Galaxy A13 (6GB RAM)",
+            "desc": "A13",
+            "price": 228.60,
+            "color": "#ffffff",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a135fzwjins/gallery/in-galaxy-a13-sm-a135-417870-sm-a135fzwjins-thumb-531576851?$160_160_PNG$"
+        },
+        {
+            "id": 10,
+            "name": "Galaxy A13 (4GB RAM)",
+            "desc": "A13",
+            "price": 195.94,
+            "color": "00fffb",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a135flbgins/gallery/in-galaxy-a13-sm-a135-sm-a135flbgins-thumb-531576525?$160_160_PNG$"
         }
     ]
 }
