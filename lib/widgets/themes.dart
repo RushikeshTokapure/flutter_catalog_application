@@ -4,7 +4,7 @@ import 'package:velocity_x/velocity_x.dart';
 
 class DefaultTheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
-      primarySwatch: Colors.deepPurple,
+      primarySwatch: Colors.grey,
       fontFamily: GoogleFonts.workSans().fontFamily,
       appBarTheme: AppBarTheme(
         color: Colors.white,
@@ -19,6 +19,7 @@ class DefaultTheme {
       );
 
   //colors
-  static Color indigoLight = Vx.indigo200;
-  static Color indigo = Vx.indigo900;
+  static Color indigoLight = Vx.gray200;
+  static Color indigo = Vx.gray900;
+  static Color white = Vx.white;
 }
