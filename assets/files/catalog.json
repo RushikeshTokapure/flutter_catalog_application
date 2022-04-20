@@ -14,31 +14,31 @@
             "desc": "S22",
             "price": 799,
             "color": "#ffffff",
-            "image": "https://m.media-amazon.com/images/I/71HUnJvHsbL._SL1500_.jpg"
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/2202/gallery/in-galaxy-s22-s901-412948-sm-s901ezwdinu-thumb-530964698?$160_160_PNG$"
         },
         {
             "id": 3,
-            "name": "Samsung S22 Pro",
-            "desc": "S22 Pro",
+            "name": "Samsung S22+",
+            "desc": "S22+",
             "price": 859,
             "color": "#ff1100",
-            "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/878dc681-657e-41ac-87a4-1e02f1d9541b22230620.jpg"
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/2202/gallery/in-galaxy-s22-plus-s906-412931-sm-s906ezwdinu-thumb-530963907?$160_160_PNG$"
         },
         {
             "id": 4,
-            "name": "Samsung S22 Pro Max",
-            "desc": "S22 Pro Max",
+            "name": "Samsung S21 FE 5G",
+            "desc": "S21 FE 5G",
             "price": 899,
             "color": "#0004ff",
-            "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/9d06235b-1df3-4674-b5b8-cde35a4c23fe22230635.jpg"
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-g990ezaginu/gallery/in-galaxy-s21-fe-g990-sm-g990ezaginu-thumb-530606564?$160_160_PNG$"
         },
         {
             "id": 5,
-            "name": "Samsung S22 Ultra Pro Max",
-            "desc": "S22 Ultra Pro Max",
+            "name": "Samsung S22 Ultra",
+            "desc": "S22 Ultra",
             "price": 959,
             "color": "#c800ff",
-            "image": "https://www.xda-developers.com/files/2022/02/Samsung-Galaxy-S22-Ultra-Phantom-White_Product-Box-Image_86735.jpg"
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/2202/gallery/in-galaxy-s22-ultra-s908-413016-sm-s908edrginu-thumb-530969112?$160_160_PNG$"
         },
         {
             "id": 6,
