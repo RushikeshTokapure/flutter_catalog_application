@@ -19,7 +19,7 @@ class DefaultTheme {
       );
 
   //colors
-  static Color indigoLight = Vx.gray200;
-  static Color indigo = Vx.gray900;
+  static Color grayLight = Vx.gray200;
+  static Color gray = Vx.gray900;
   static Color white = Vx.white;
 }

@@ -17,7 +17,7 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      backgroundColor: Colors.white,
+      backgroundColor: DefaultTheme.white,
       bottomNavigationBar: ButtonBar(
         alignment: MainAxisAlignment.spaceBetween,
         buttonPadding: EdgeInsets.zero,
@@ -25,12 +25,12 @@ class DetailPage extends StatelessWidget {
           "\$${catalog.price}".text.bold.xl4.make(),
           ElevatedButton(
             onPressed: () {},
-            child: "Buy".text.color(DefaultTheme.white).xl2.make(),
+            child: "Add to Cart".text.color(DefaultTheme.white).xl.make(),
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(DefaultTheme.indigo),
+              backgroundColor: MaterialStateProperty.all(DefaultTheme.gray),
               shape: MaterialStateProperty.all(StadiumBorder()),
             ),
-          ).wh(100, 60),
+          ).wh(140, 60),
         ],
       ).p64(),
       body: SafeArea(
@@ -45,19 +45,25 @@ class DetailPage extends StatelessWidget {
               height: 30.0,
               arcType: VxArcType.CONVEY,
               edge: VxEdge.TOP,
-              child: Container(
-                color: Colors.white,
-                width: context.screenWidth,
-                child: Column(
-                  children: [
-                    catalog.name.text.xl3
-                        .color(DefaultTheme.indigo)
-                        .bold
-                        .make(),
-                    catalog.desc.text.xl.make(),
-                    10.heightBox,
-                  ],
-                ).py64(),
+              child: SingleChildScrollView(
+                child: Container(
+                  color: Colors.white,
+                  width: context.screenWidth,
+                  child: Column(
+                    children: [
+                      catalog.name.text.xl3
+                          .color(DefaultTheme.gray)
+                          .bold
+                          .make(),
+                      catalog.desc.text.xl.make(),
+                      10.heightBox,
+                      "lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor"
+                          .text
+                          .make()
+                          .p16(),
+                    ],
+                  ).py32(),
+                ),
               ),
             ),
           )

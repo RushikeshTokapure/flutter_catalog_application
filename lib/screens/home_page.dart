@@ -1,7 +1,9 @@
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'package:flutter_catalog/models/product.dart';
@@ -39,22 +41,31 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: DefaultTheme.indigoLight,
-        body: SafeArea(
-          child: Container(
-            padding: Vx.m32,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CatalogHeader(),
-                if (CatalogModel.products != null &&
-                    CatalogModel.products!.isNotEmpty)
-                  CatalogList().py16().expand()
-                else
-                  CircularProgressIndicator().centered().expand(),
-              ],
-            ),
+      backgroundColor: DefaultTheme.grayLight,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, Routes.cartRoute);
+        },
+        backgroundColor: DefaultTheme.gray,
+        foregroundColor: DefaultTheme.white,
+        child: Icon(CupertinoIcons.cart),
+      ),
+      body: SafeArea(
+        child: Container(
+          padding: Vx.m32,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CatalogHeader(),
+              if (CatalogModel.products != null &&
+                  CatalogModel.products!.isNotEmpty)
+                CatalogList().py16().expand()
+              else
+                CircularProgressIndicator().centered().expand(),
+            ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
