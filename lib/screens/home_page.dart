@@ -41,14 +41,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: DefaultTheme.grayLight,
+      backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, Routes.cartRoute);
-        },
-        backgroundColor: DefaultTheme.gray,
-        foregroundColor: DefaultTheme.white,
-        child: Icon(CupertinoIcons.cart),
+        onPressed: () => Navigator.pushNamed(context, Routes.cartRoute),
+        backgroundColor: context.theme.buttonColor,
+        child: Icon(
+          CupertinoIcons.cart,
+          color: DefaultTheme.white,
+        ),
       ),
       body: SafeArea(
         child: Container(

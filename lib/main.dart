@@ -10,6 +10,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   // int i = 2;
   // String name = "Rushikesh";
   // double pi = 3.14;
@@ -22,11 +24,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       theme: DefaultTheme.lightTheme(context),
       darkTheme: DefaultTheme.darkTheme(context),
-      initialRoute: Routes.homeRoute,
+      initialRoute: Routes.loginRoute,
       routes: {
         "/": (context) => LoginPage(),
         Routes.homeRoute: (context) => HomePage(),

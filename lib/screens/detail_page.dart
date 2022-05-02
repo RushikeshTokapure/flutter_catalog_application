@@ -16,23 +16,29 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      backgroundColor: DefaultTheme.white,
-      bottomNavigationBar: ButtonBar(
-        alignment: MainAxisAlignment.spaceBetween,
-        buttonPadding: EdgeInsets.zero,
-        children: [
-          "\$${catalog.price}".text.bold.xl4.make(),
-          ElevatedButton(
-            onPressed: () {},
-            child: "Add to Cart".text.color(DefaultTheme.white).xl.make(),
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(DefaultTheme.gray),
-              shape: MaterialStateProperty.all(StadiumBorder()),
-            ),
-          ).wh(140, 60),
-        ],
-      ).p64(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
+      backgroundColor: context.canvasColor,
+      bottomNavigationBar: Container(
+        color: context.cardColor,
+        child: ButtonBar(
+          alignment: MainAxisAlignment.spaceBetween,
+          buttonPadding: EdgeInsets.zero,
+          children: [
+            "\$${catalog.price}".text.bold.xl4.make(),
+            ElevatedButton(
+              onPressed: () {},
+              child: "Add to Cart".text.color(DefaultTheme.white).xl.make(),
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all(context.theme.buttonColor),
+                shape: MaterialStateProperty.all(StadiumBorder()),
+              ),
+            ).wh(140, 60),
+          ],
+        ).p64(),
+      ),
       body: SafeArea(
         bottom: false,
         child: Column(children: [
@@ -47,12 +53,12 @@ class DetailPage extends StatelessWidget {
               edge: VxEdge.TOP,
               child: SingleChildScrollView(
                 child: Container(
-                  color: Colors.white,
+                  color: context.cardColor,
                   width: context.screenWidth,
                   child: Column(
                     children: [
                       catalog.name.text.xl3
-                          .color(DefaultTheme.gray)
+                          .color(context.accentColor)
                           .bold
                           .make(),
                       catalog.desc.text.xl.make(),
@@ -62,7 +68,7 @@ class DetailPage extends StatelessWidget {
                           .make()
                           .p16(),
                     ],
-                  ).py32(),
+                  ).py64(),
                 ),
               ),
             ),
