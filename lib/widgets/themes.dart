@@ -31,7 +31,7 @@ class DefaultTheme {
           elevation: 0.0,
           iconTheme: const IconThemeData(color: Colors.white),
           // textTheme: Theme.of(context).textTheme,
-          titleTextStyle: TextStyle(color: black, fontSize: 18),
+          titleTextStyle: TextStyle(color: white, fontSize: 18),
         ),
       );
 
